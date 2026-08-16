@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="طباعة بطاقة - وش وظهر"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imgFront"
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"
+            android:contentDescription="أمامي"/>
+
+        <Button
+            android:id="@+id/btnFront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اختر الصورة الأمامية (كاميرا / استوديو)"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"
+            android:layout_marginTop="16dp"
+            android:contentDescription="خلفي"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اختر الصورة الخلفية (كاميرا / استوديو)"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnPrintFront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="طباعة الوجه الأمامي (10 نسخ - ورقة منفصلة)"
+            android:backgroundTint="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnPrintBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="طباعة الوجه الخلفي (10 نسخ - ورقة منفصلة)"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnPrintDuplex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="طباعة الوجهين على نفس الورقة (وش وظهر)"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#388E3C"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ملاحظة: عند اختيار الطباعة على نفس الورقة، فعّل خيار (طباعة على الوجهين / Two-Sided) من إعدادات الطابعة في نافذة الطباعة."
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
